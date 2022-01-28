@@ -1,7 +1,7 @@
 {
   "name": "address-search-api",
   "version": "1.0.0-beta",
-  "description": "API for searching addressed from a spatial table stores on PostgreSQL",
+  "description": "A API that searchs for address from a PostgreSQL database.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
