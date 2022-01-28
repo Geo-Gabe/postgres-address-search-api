@@ -69,4 +69,4 @@ npm run start
 
 ## Endpoint Usage <a name = "usage"></a>
 
-Open http://localhost:3001/api/v1/ <= append address to search at this after /
+Open http://localhost:3001/api/v1/ <= append the address or partial address after /
