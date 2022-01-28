@@ -4,6 +4,10 @@ const pool = require("../Config/db");
 
 const router = express.Router();
 
+/* CONFIGURE HERE */
+const result_limit = 100; //Limit the ammount of of results per query
+const address_column = "situs"; // Name of column that has the full address you want to look up
+
 //configure rate limiters
 const limiter15m = rateLimit({
   windowMs: 5 * 60 * 1000, // 5 minutes
@@ -13,8 +17,6 @@ const limiter15m = rateLimit({
 
 //API Routes
 router.get("/:address", limiter15m, async (req, res) => {
-  const result_limit = 100;
-  const address_column = "situs"; // Name of column that has the full address you want to look up
   const { address } = req.params;
 
   try {
